@@ -1,0 +1,52 @@
+html{
+    box-sizing: border-box;
+}
+*, 
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+
+body{
+    font-family:'Public Sans', sans-serif;
+    font-size: 16px;
+    background-color: #EDF3F8;
+
+}
+
+.visually-hidden{
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 165px;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 768px;
+        padding: 0 10px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container{
+        max-width: 375px;
+        padding: 0 5px;
+        margin: auto;
+    }
+}
+
+
